@@ -278,34 +278,35 @@ public class Main {
 	public static void getAvgResponseTime() {
 		for(int i = 0;i < active.size();i++) {
 			
-			avgResponseTime =+ active.get(i).responseTime;
+			avgResponseTime = active.get(i).responseTime + avgResponseTime;
 			System.out.println(active.get(i).processNum + " response time is " + active.get(i).responseTime);
 			 
 		}
 		
 		System.out.println("Average reponse time is:  " + (avgResponseTime/active.size()) + "\n\n");
+		avgResponseTime = 0;
 	}
 	
 	//This function is not entirely correct
 	public static void getAvgWaitTime() {
 		for(int i = 0;i < active.size();i++) {
 			
-			avgResponseTime =+ active.get(i).responseTime;
+			avgResponseTime = active.get(i).responseTime + avgResponseTime;
 			System.out.println(active.get(i).processNum + " response time is " + active.get(i).responseTime);
 			 
 		}
 		
-		System.out.println("Average wait time is:  " + "29.1" +/*(avgResponseTime/active.size())*/ "\n\n");
+		System.out.println("Average wait time is:  " + (avgResponseTime/active.size()) + "\n\n");
 	}
 	
 	public static void getAvgTurnAroundTime() {
 		for(int i = 0;i < active.size();i++) {
 			
-			avgTurnAroundTime =+ active.get(i).turnAroundTime;
-			System.out.println(active.get(i).processNum + " Turnaround time is " + "29.1"/*active.get(i).turnAroundTime*/);
+			avgTurnAroundTime = active.get(i).turnAroundTime + avgTurnAroundTime;
+			System.out.println(active.get(i).processNum + " Turnaround time is " + active.get(i).turnAroundTime);
 			 
 		}
 		
-		System.out.println("Average wait time is:  " + "540.1" /*(avgTurnAroundTime/active.size())*/ + "\n\n");
+		System.out.println("Average wait time is:  " + (avgTurnAroundTime/active.size()) + "\n\n");
 	}
 }
