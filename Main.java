@@ -49,43 +49,48 @@ public class Main {
 		int p9IO[] = { 37, 41, 30, 29, 33, 22, 24, 29 };
 
 		p1.setPCPU(p1CPU);
-		p2.setPCPU(p2CPU);
-		p3.setPCPU(p3CPU);
-		p4.setPCPU(p4CPU);
-		p5.setPCPU(p5CPU);
-		p6.setPCPU(p6CPU);
-		p7.setPCPU(p7CPU);
-		p8.setPCPU(p8CPU);
-		p9.setPCPU(p9CPU);
-
 		p1.setPIO(p1IO);
-		p2.setPIO(p2IO);
-		p3.setPIO(p3IO);
-		p4.setPIO(p4IO);
-		p5.setPIO(p5IO);
-		p6.setPIO(p6IO);
-		p7.setPIO(p7IO);
-		p8.setPIO(p8IO);
-		p9.setPIO(p9IO);
-
 		p1.setProcessNum("P1");
-		p2.setProcessNum("P2");
-		p3.setProcessNum("P3");
-		p4.setProcessNum("P4");
-		p5.setProcessNum("P5");
-		p6.setProcessNum("P6");
-		p7.setProcessNum("P7");
-		p8.setProcessNum("P8");
-		p9.setProcessNum("P9");
-
 		p1.setPCPUBurstAndPIONum();
+		
+		p2.setPCPU(p2CPU);
+		p2.setPIO(p2IO);
+		p2.setProcessNum("P2");
 		p2.setPCPUBurstAndPIONum();
+		
+		p3.setPCPU(p3CPU);
+		p3.setPIO(p3IO);
+		p3.setProcessNum("P3");
 		p3.setPCPUBurstAndPIONum();
+		
+		p4.setPCPU(p4CPU);
+		p4.setPIO(p4IO);
+		p4.setProcessNum("P4");
 		p4.setPCPUBurstAndPIONum();
+		
+		p5.setPCPU(p5CPU);
+		p5.setPIO(p5IO);
+		p5.setProcessNum("P5");
 		p5.setPCPUBurstAndPIONum();
+		
+		p6.setPCPU(p6CPU);
+		p6.setPIO(p6IO);
+		p6.setProcessNum("P6");
 		p6.setPCPUBurstAndPIONum();
+		
+		p7.setPCPU(p7CPU);
+		p7.setPIO(p7IO);
+		p7.setProcessNum("P7");
 		p7.setPCPUBurstAndPIONum();
+		
+		p8.setPCPU(p8CPU);
+		p8.setPIO(p8IO);
+		p8.setProcessNum("P8");
 		p8.setPCPUBurstAndPIONum();
+		
+		p9.setPCPU(p9CPU);
+		p9.setPIO(p9IO);
+		p9.setProcessNum("P9");
 		p9.setPCPUBurstAndPIONum();
 		
 		active.add(p1);
